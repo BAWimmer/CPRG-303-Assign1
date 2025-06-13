@@ -19,6 +19,8 @@ export default function App() {
     'https://picsum.photos/120/120?random=12',
   ];
 
+  const imageViews = [124, 98, 332, 251, 183, 76, 411, 229, 505, 199, 304, 150];
+
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar barStyle="dark-content" backgroundColor="#ffffff" />
@@ -83,10 +85,10 @@ export default function App() {
         {/* Photo Grid */}
         <View style={styles.photoGrid}>
           {gridImages.map((imageUri, index) => (
-            <TouchableOpacity key={index} style={styles.gridItem}>
+            <View key={index} style={styles.gridItem}>
               <Image source={{ uri: imageUri }} style={styles.gridImage} />
-            </TouchableOpacity>
-          ))}
+              <Text style={styles.imageViews}>{imageViews[index]} views</Text>
+            </View>))}
         </View>
 
         {/* Alert Button */}
@@ -228,9 +230,9 @@ const styles = StyleSheet.create({
   },
   memberButton: {
     backgroundColor: '#f0f0f0',
-    paddingVertical: 8,
-    paddingHorizontal: 15,
-    borderRadius: 5,
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 8,
     alignItems: 'center',
     borderWidth: 1,
     borderColor: '#d0d0d0',
@@ -247,13 +249,25 @@ const styles = StyleSheet.create({
   },
   gridItem: {
     width: '33.33%',
-    aspectRatio: 1,
     padding: 1,
+  },
+  gridContent: {
+    width: '100%',
+    aspectRatio: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   gridImage: {
     width: '100%',
-    height: '100%',
-    backgroundColor: '#f0f0f0',
+    aspectRatio: 1,
+    resizeMode: 'cover',
+    borderRadius: 4,
+  },
+  imageViews: {
+    fontSize: 12,
+    textAlign: 'center',
+    color: '#555',
+    marginTop: 2,
   },
   bottomNav: {
     flexDirection: 'row',
