@@ -34,7 +34,7 @@ export default function App() {
           <Text style={styles.headerSubtitle}>OOTD Everyday</Text>
         </View>
         <TouchableOpacity style={styles.addButton}>
-          <Text style={styles.addIcon}>+</Text>
+          <b><Text style={styles.addIcon}>+</Text></b>
         </TouchableOpacity>
       </View>
 
@@ -76,7 +76,7 @@ export default function App() {
         {/* Member Button */}
         <View style={styles.buttonContainer}>
           <TouchableOpacity style={styles.memberButton}>
-            <Text style={styles.memberButtonText}>Member ⌄</Text>
+            <Text style={styles.memberButtonText}>Member  ▼</Text>
           </TouchableOpacity>
         </View>
 
