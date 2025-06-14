@@ -28,14 +28,14 @@ export default function App() {
       {/* Header */}
 
       <View style={styles.header}>
-        <TouchableOpacity style={styles.backButton}>
+        <TouchableOpacity style={styles.backButton} activeOpacity={0.3}>
           <Text style={styles.backArrow}>←</Text>
         </TouchableOpacity>
         <View style={styles.headerCenter}>
           <Text style={styles.headerTitle}>Group Profile</Text>
           <Text style={styles.headerSubtitle}>OOTD Everyday</Text>
         </View>
-        <TouchableOpacity style={styles.addButton}>
+        <TouchableOpacity style={styles.addButton} activeOpacity={0.3}>
           <b><Text style={styles.addIcon}>+</Text></b>
         </TouchableOpacity>
       </View>
@@ -77,7 +77,7 @@ export default function App() {
 
         {/* Member Button */}
         <View style={styles.buttonContainer}>
-          <TouchableOpacity style={styles.memberButton}>
+          <TouchableOpacity style={styles.memberButton} activeOpacity={0.3}>
             <Text style={styles.memberButtonText}>Member  ▼</Text>
           </TouchableOpacity>
         </View>
@@ -93,7 +93,7 @@ export default function App() {
 
         {/* Alert Button */}
 
-      <TouchableOpacity style={styles.alertButton} onPress={() => alert('Alert button pressed!')}>
+      <TouchableOpacity style={styles.alertButton} onPress={() => alert('Alert button pressed!')} activeOpacity={0.3}>
         <Text style={styles.alertButtonText}>Alert button</Text>
       </TouchableOpacity>
 
@@ -103,19 +103,19 @@ export default function App() {
 
       {/* Bottom Navigation Bar */}
       <View style={styles.bottomNav}>
-        <TouchableOpacity style={styles.navItem}>
+        <TouchableOpacity style={styles.navItem} activeOpacity={0.3}>
           <Text style={styles.navIcon}>🏠</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.navItem}>
+        <TouchableOpacity style={styles.navItem} activeOpacity={0.3}>
           <Text style={styles.navIcon}>🔍</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.navItem}>
+        <TouchableOpacity style={styles.navItem} activeOpacity={0.3}>
           <Text style={styles.navIcon}>➕</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.navItem}>
+        <TouchableOpacity style={styles.navItem} activeOpacity={0.3}>
           <Text style={styles.navIcon}>📱</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.navItem}>
+        <TouchableOpacity style={styles.navItem} activeOpacity={0.3}>
           <Text style={styles.navIcon}>👤</Text>
         </TouchableOpacity>
       </View>
