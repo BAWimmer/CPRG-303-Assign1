@@ -220,9 +220,9 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
   profileDescription: {
-    fontSize: 14,
+    fontSize: 20,
     color: '#000000',
-    lineHeight: 18,
+    lineHeight: 22,
   },
   buttonContainer: {
     paddingHorizontal: 20,
@@ -250,6 +250,8 @@ const styles = StyleSheet.create({
   gridItem: {
     width: '33.33%',
     padding: 1,
+    borderColor: '#f0f0f0',
+    borderWidth: 0.5
   },
   gridContent: {
     width: '100%',
